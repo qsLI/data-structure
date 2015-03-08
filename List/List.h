@@ -22,5 +22,6 @@ Status GetElem(Sqlist L, int i, ElementType *e);
 Status ListInsert(Sqlist *L, int i, ElementType e);
 //delete element at position i
 Status ListDelete(Sqlist *L, int i, ElementType e);
-
+//if the list is empty
+Status ListEmpty(Sqlist L);
 #endif 

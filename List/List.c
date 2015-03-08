@@ -22,7 +22,7 @@ Status ListInsert(Sqlist *L, int i, ElementType e){
                    //in the position length + 1
                    L->data[i] = e;                  
                    }
-        L->lenght++;
+        L->length++;
         return OK;
 }
 //delete element at position i
@@ -39,5 +39,11 @@ Status ListDelete(Sqlist *L, int i, ElementType e){
        L->length--;
        return OK;
 }
-               
+//empty  
+Status ListEmpty(Sqlist L){
+	if (L.length == 0)
+		return OK;
+	else
+		return ERROR;
+}
        
